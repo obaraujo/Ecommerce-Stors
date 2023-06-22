@@ -1,0 +1,359 @@
+header {
+  background-color: var(--background-header);
+  width: 100%;
+}
+
+header .principal {
+  width: var(--content-width);
+  height: 6rem;
+  display: grid;
+  gap: 3rem;
+  grid-template-columns: 2fr 5fr 2fr 1fr;
+
+  margin: auto;
+}
+
+header .bt-open-nav {
+  display: none;
+}
+header .bt-close-nav {
+  display: none;
+}
+
+/* Identificação do site */
+
+.principal .identity-site .logo {
+  max-width: var(--logo-width);
+}
+
+.principal .identity-site {
+  display: flex;
+  align-items: center;
+  float: left;
+
+  text-decoration: none;
+
+  cursor: pointer;
+}
+
+.principal .identity-site h1 {
+  color: var(--color-header);
+  font-size: 3rem;
+  margin: 0;
+}
+
+/* Barra de pesquisa */
+
+.principal .search {
+  float: left;
+  display: flex;
+  align-items: center;
+}
+
+.principal .search select {
+  margin: 0;
+  height: 4rem;
+  width: 10rem;
+  background-color: var(--primary);
+  border: none;
+  border-radius: 0.5rem 0 0 0.5rem;
+  color: var(--color-header);
+  font-weight: 500;
+  font-size: 1.6rem;
+  padding: 0 0.5rem;
+}
+
+.principal .search select:hover {
+  background-color: var(--primary-hover);
+  cursor: pointer;
+}
+
+.principal .search button:hover {
+  background-color: var(--primary-hover);
+  cursor: pointer;
+}
+
+.principal .search input {
+  margin: 0;
+  width: 43rem;
+  height: 4rem;
+  border: 0.1rem solid var(--primary);
+  padding-left: 1rem;
+}
+
+input::placeholder {
+  color: #bcbcbc;
+}
+
+.principal .search button {
+  width: 4rem;
+  height: 4rem;
+  border: none;
+  background-color: var(--primary);
+  fill: var(--color-header);
+  border-radius: 0 0.5rem 0.5rem 0;
+}
+
+.principal .profile-user {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-header);
+  fill: var(--color-header);
+  font-size: 1.2rem;
+}
+
+.principal .profile-user svg {
+  width: 3.5rem;
+  height: 3.5rem;
+  margin-left: 0.5rem;
+}
+
+.principal .profile-user .text-user p {
+  margin: 0.16rem;
+}
+
+.principal .profile-user .text-user a {
+  margin: 0.1rem 0.5rem;
+  color: var(--color-header);
+  text-decoration: none;
+}
+
+.principal .profile-user .text-user a:hover {
+  text-decoration: underline;
+}
+
+.principal .shopping-cart {
+  margin: 1rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  color: var(--color-header);
+  fill: var(--color-header);
+}
+
+.principal .shopping-cart svg {
+  width: 4rem;
+  height: 4rem;
+}
+
+.principal .shopping-cart .notification.on {
+  position: absolute;
+  top: 0;
+  left: 3rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 0.8rem;
+  height: 0.8rem;
+
+  padding: 0.5rem;
+
+  background-color: var(--notification);
+  border-radius: 50%;
+  border: 0.1rem solid var(--notification);
+  box-sizing: content-box;
+
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+header .menu {
+  width: 100%;
+  height: 3rem;
+  background-color: var(--background-sub-header);
+  display: flex;
+  align-items: center;
+}
+
+header .menu nav {
+  width: var(--content-width);
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+header .menu a {
+  margin: 0 1.8rem;
+  color: var(--color-header);
+  text-decoration: none;
+}
+
+@media screen and (max-width: 1400px) {
+  header .principal {
+    gap: 2rem;
+  }
+
+  .principal .search input {
+    width: 75%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  header .principal {
+    grid-template-columns: 1fr 2fr 7fr 1fr;
+    gap: 1rem;
+  }
+
+  header .bt-open-nav {
+    display: flex;
+    align-content: center;
+    align-items: center;
+  }
+
+  header.navbar .bt-close-nav {
+    display: block;
+  }
+
+  header .principal .search #category {
+    display: none;
+  }
+
+  header .principal .search input {
+    width: calc(100% - 4rem);
+    border-radius: 0.5rem 0 0 0.5rem;
+  }
+
+  header .principal .profile-user {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  header .principal {
+    padding: 0 1rem;
+    grid-template-columns: 1fr 1fr 8fr 1fr;
+    gap: 0.5rem;
+  }
+
+  .fixed {
+    position: fixed;
+    z-index: 9;
+    top: 0;
+    left: 0;
+  }
+
+  .principal .shopping-cart svg {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .principal .shopping-cart .notification.on {
+    position: absolute;
+    left: 2rem;
+    width: 0.6em;
+    height: 0.6rem;
+  }
+
+  header .principal h1 {
+    display: none;
+  }
+
+  header .menu {
+    display: none;
+  }
+}
+
+/* Resposivo navbar */
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 1rem 1rem;
+  z-index: 100;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  animation: openmenu 0.5s;
+}
+
+@keyframes openmenu {
+  from {
+    height: 6rem;
+  }
+  to {
+    height: 100vh;
+  }
+}
+
+@keyframes closenav {
+  from {
+    height: 100vh;
+  }
+  to {
+    height: 6rem;
+  }
+}
+
+.navbar .bt-close-nav {
+  position: absolute;
+  top: 1rem;
+  left: 0;
+}
+
+.navbar .bt-close-nav svg {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.navbar .bt-open-nav {
+  display: none;
+}
+
+.navbar .principal {
+  grid-template-columns: 1fr;
+  height: auto;
+  position: relative;
+}
+
+.navbar .principal .identity-site {
+  margin-left: 2rem;
+}
+
+.navbar .principal .shopping-cart {
+  position: absolute;
+  top: 0.5rem;
+  right: 1rem;
+  margin: 0;
+}
+
+.navbar .principal h1 {
+  display: block;
+}
+
+header.navbar .profile-user {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  margin: 1rem 0;
+}
+
+header.navbar .profile-user .text-user {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.navbar .menu {
+  display: block;
+  height: auto;
+}
+
+.navbar .menu nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.navbar .menu nav > * {
+  margin: 1rem;
+}

@@ -1,0 +1,97 @@
+footer {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: var(--background-footer);
+  padding: 2rem;
+  color: #fff;
+  text-align: center;
+}
+
+footer h4 {
+  font-size: 2rem;
+  margin: 1rem;
+}
+
+footer p {
+  font-size: 1.4rem;
+  margin: 0.7rem;
+}
+
+footer a {
+  color: #ffff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+footer > * {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+footer .social {
+  flex-direction: row;
+}
+
+footer .social .icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  fill: #fff;
+  width: 5.5rem;
+  height: 5.5rem;
+  border-radius: 50%;
+  margin: 1rem;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+footer .social .icon svg {
+  width: 4rem;
+  height: 4rem;
+}
+
+footer .social .instagram {
+  background: radial-gradient(50% 50% at 50% 50%, #ff00e5 0%, #bd00ff 100%);
+}
+footer .social .seabratem {
+  background: radial-gradient(50% 50% at 50% 50%, #ff3c00 0%, #ff3c00 100%);
+}
+
+footer .social .whatsapp {
+  background: radial-gradient(50% 50% at 50% 50%, #31ba45 0%, #59d264 100%);
+}
+footer .social .instagram:hover {
+  background: radial-gradient(50% 50% at 50% 50%, #cc00b8 0%, #8f00c4 100%);
+}
+footer .social .seabratem:hover {
+  background: radial-gradient(50% 50% at 50% 50%, #ca2f00 0%, #ca3001 100%);
+}
+
+footer .social .whatsapp:hover {
+  background: radial-gradient(50% 50% at 50% 50%, #09941e 0%, #1c8d26 100%);
+}
+
+.info-site .button {
+  height: 5rem;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+  footer {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+    overflow: hidden;
+  }
+}

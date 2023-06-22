@@ -1,0 +1,269 @@
+.initial-presentation {
+  position: relative;
+  width: 100%;
+  height: 50rem;
+  background-image: url("../img/fundo.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin-bottom: 1.7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.initial-presentation .bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(0deg, var(--primary) 0%, #000 50%);
+  opacity: 0.5;
+}
+
+.initial-presentation .content {
+  z-index: 1;
+  color: var(--secondary);
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+}
+.initial-presentation h1 {
+  font-size: 4rem;
+  font-weight: 900;
+  margin: 0.5rem;
+}
+
+.initial-presentation h2 {
+  margin: 0.5rem;
+  font-size: 2rem;
+  font-weight: normal;
+}
+
+.filters {
+  position: sticky;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2.6rem;
+  width: 100%;
+}
+
+.filters select {
+  background: var(--primary);
+  border-radius: 0.5rem;
+  border: 0.1rem solid var(--primary);
+  height: 3.3rem;
+  padding: 0.1rem 1rem;
+  cursor: pointer;
+
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 2.3rem;
+  color: var(--secondary);
+}
+
+.filters .categoty {
+}
+
+.filters .search form {
+  display: flex;
+  align-items: center;
+}
+
+.filters .search input {
+  height: 4rem;
+  width: 25.2rem;
+  background: var(--secondary);
+  border: 0.1rem solid var(--primary);
+  box-sizing: border-box;
+  border-radius: 0.5rem;
+  margin-right: 0.5rem;
+  padding: 1rem;
+
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+}
+
+.filters .search button {
+  height: 4rem;
+  width: 4rem;
+  background: var(--primary);
+  border-radius: 5px;
+  border: none;
+  fill: var(--secondary);
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.filters .search button:hover {
+
+  background: var(--primary-hover);
+}
+
+.products {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.product {
+  background: var(--secondary);
+  text-decoration: none;
+  width: 20rem;
+  height: 25rem;
+  mix-blend-mode: normal;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.568);
+  border-radius: .5rem;
+  overflow: hidden;
+  box-sizing: border-box;
+  margin-right: 2rem;
+  margin-bottom: 3rem;
+
+  transition: all 0.5s;
+}
+
+.product:hover {
+  box-shadow: 0px 6px 20px #00000060;
+  height: 28rem;
+  margin-bottom: 0;
+  z-index: 1;
+}
+
+.thumbnail {
+  width: 100%;
+  height: 15.7rem;
+  background-color: red;
+  overflow: hidden;
+}
+
+.thumbnail img {
+  height: 15.7rem;
+}
+
+.meta-info {
+  width: 100%;
+  padding: 1rem;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  box-sizing: border-box;
+}
+
+.price-off {
+  font-weight: normal;
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+  text-decoration-line: line-through;
+  font-feature-settings: "tnum" on, "lnum" on;
+
+  color: var(--text-off);
+}
+
+.price-on {
+  font-weight: bold;
+  font-size: 2.4rem;
+  line-height: 2.8rem;
+  font-feature-settings: "tnum" on, "lnum" on;
+  margin-top: 0rem;
+  color: var(--text-on);
+}
+
+.info-product {
+  margin-top: 1rem;
+
+}
+
+.product-title {
+  font-weight: 500;
+  font-size: 1.3rem;
+  line-height: 1.5rem;
+
+  color: var(--text-sub);
+}
+
+.review {
+  float: right;
+  color: var(--text-sub);
+  opacity: 0;
+  transition: all .5s;
+}
+
+.product-description {
+  font-weight: 400;
+  font-size: 1.1rem;
+  line-height: 1.5rem;
+  margin-top: 0.5rem;
+  word-wrap: normal;
+  opacity: 0;
+  transition: all .5s;
+  color: var(--text-sub);
+
+  overflow: hidden;
+  text-overflow: ellipsis; 
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical; 
+}
+
+ .product:hover .product-description {
+  opacity: 1;
+}
+
+.product:hover .review {
+  opacity: 1;
+}
+
+.contact {
+
+}
+
+.contact .title {
+  width: 100%;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-size: 2rem;
+}
+
+.contact .button-contact {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.contact .whatsapp {
+  fill: var(--secondary);
+  margin-right: .5rem;
+}
+
+.contact .button-contact a {
+  color: var(--secondary);
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-size: 2rem;
+  line-height: 3rem;
+  
+  background:  #00c932;
+  border-radius: 0.5rem;
+  height: 7rem;
+  width: 20rem;
+  padding: 0 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.contact .button-contact a:hover {
+  background:#00b42d;
+}
+
+

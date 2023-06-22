@@ -1,0 +1,75 @@
+footer {
+    position: static;
+    bottom: 0;
+    left: 0;
+  width: 100%;
+  background: #222222;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+footer .social {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+footer .social .icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  fill: #fff;
+  width: 5.5rem;
+  height: 5.5rem;
+  border-radius: 50%;
+  margin: 1rem;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+footer .social .icon svg {
+    width: 4rem;
+    height: 4rem;
+}
+
+footer .social .instagram {
+  background: radial-gradient(50% 50% at 50% 50%, #ff00e5 0%, #bd00ff 100%);
+}
+footer .social .seabratem {
+  background: radial-gradient(50% 50% at 50% 50%, #ff3c00 0%, #ff3c00 100%);
+}
+
+footer .social .whatsapp {
+  background: radial-gradient(50% 50% at 50% 50%, #31ba45 0%, #59d264 100%);
+}
+footer .social .instagram:hover {
+  background: radial-gradient(50% 50% at 50% 50%, #cc00b8 0%, #8f00c4 100%);
+}
+footer .social .seabratem:hover {
+  background: radial-gradient(50% 50% at 50% 50%, #ca2f00 0%, #ca3001 100%);
+}
+
+footer .social .whatsapp:hover {
+  background: radial-gradient(50% 50% at 50% 50%, #09941e 0%, #1c8d26 100%);
+}
+
+footer .text {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  color: #fff;
+  text-align: center;
+}
+
+footer .text p {
+  margin: 0.5rem;
+}
+
+footer .text p a {
+    color: #ffff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+footer .text p a:hover {
+    text-decoration: underline;
+}

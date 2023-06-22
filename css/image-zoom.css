@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+  }
+
+  .img-zoom-container {
+    position: relative;
+  }
+
+  .img-zoom-lens {
+    position: absolute;
+    border: 1px solid #d4d4d4;
+    /*set the size of the lens:*/
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.301);
+  }
+
+  .img-zoom-result {
+    position: absolute;
+    z-index: 10;
+    width: 300px;
+    height: 300px;
+    border: 1px solid #d4d4d4;
+    box-shadow: 0 0 10rem rgba(0, 0, 0, 0.527);
+    border-radius: 10px;
+    margin-left: 10px;  
+    animation: aparece 0.5s;
+  }
+
+
+  @keyframes aparece {
+    to {
+      opacity: 1;
+    }
+    from {
+      opacity: 0;
+    }
+  }

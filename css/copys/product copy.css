@@ -1,0 +1,158 @@
+.painel-product {
+  display: grid;
+  grid-template-columns: 1fr 42.7rem;
+  width: 105rem;
+}
+
+.painel {
+  margin: 1rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+
+  font-family: "Roboto", sans-serif;
+}
+
+.painel .local,
+.painel .local a {
+  font-weight: 500;
+  color: var(--text-sub);
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+  transition: all 0.5s;
+}
+
+.painel .local a:hover {
+  text-decoration: underline;
+}
+
+.painel .name-product {
+  font-weight: 500;
+  font-size: 2.4rem;
+  line-height: 2.8rem;
+  margin: 1rem 0 0rem 0;
+}
+
+.painel .review-product {
+  height: 2.1rem;
+  font-size: 1.5rem;
+  margin-bottom: 1.3rem;
+}
+
+.painel .price-off {
+  font-size: 1.6rem;
+  margin-bottom: 0.5rem;
+}
+.painel .price-on {
+  font-size: 3.6rem;
+  font-weight: 500;
+}
+
+.painel .stock {
+  font-weight: bold;
+  font-size: 2rem;
+  line-height: 2.3rem;
+  margin: 1rem 0 1.8rem 0;
+
+  color: #00a807;
+}
+
+.painel .qtd {
+  background: #dadada;
+  border-radius: 5px;
+  height: 2.5rem;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  padding: 0 1rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 2.8rem;
+}
+
+.painel .qtd span {
+  color: #fff;
+  font-weight: 400;
+  font-size: 1.5rem;
+  margin-right: 0.5rem;
+}
+
+.painel .qtd input {
+  width: 30%;
+  height: 80%;
+  border: none;
+  float: right;
+  background: none;
+  color: #00a807;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  background-color: #f0f0f0;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.painel .qtd .qtd-buttons {
+  border: none;
+  background-color: var(--primary);
+  border-radius: 0.5rem;
+  height: 100%;
+  width: 2.5rem;
+  cursor: pointer;
+}
+
+.painel .qtd input:focus {
+  outline: none;
+  background-color: blue;
+}
+.painel .action button {
+  width: 100%;
+  height: 4.4rem;
+  border-radius: 1rem;
+  border: none;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.8rem;
+  line-height: 2.1rem;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.painel .action .buy {
+  background-color: var(--primary);
+  color: #fff;
+  margin-bottom: 1rem;
+}
+.painel .action .cart {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #00000000;
+  color: var(--primary);
+  fill: var(--primary);
+  border: 2px solid var(--primary);
+  box-sizing: border-box;
+}
+.painel .action .buy:hover {
+  background-color: var(--primary-hover);
+}
+.painel .action .cart:hover {
+  background-color: var(--primary);
+  color: var(--secondary);
+  fill: var(--secondary);
+  border: 2px solid var(--primary);
+}
+
+.container-imgs {
+  position: relative;
+  min-width: var(--width-field-img);
+  height: var(--height-field-img);
+}
+
+.info-product {
+  width: 105rem;
+  height: 16.7rem;
+}

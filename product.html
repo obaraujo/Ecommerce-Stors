@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="shortcut icon" href="img/logo.png" type="image" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/index.css" />
+  <link rel="stylesheet" href="./css/product.css" />
+  <link rel="stylesheet" href="./css/image-zoom.css" />
+  <title>Stagon Stors</title>
+</head>
+
+<body>
+  <header class="">
+    <section class="principal">
+      <div class="bt-open-nav">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+          <path fill="none" d="M0 0h24v24H0z" />
+          <path d="M3 4h18v2H3V4zm0 7h18v2H3v-2zm0 7h18v2H3v-2z" fill="rgba(255,255,255,1)" />
+        </svg>
+      </div>
+      <div class="bt-close-nav">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32">
+          <path fill="none" d="M0 0h24v24H0z" />
+          <path
+            d="M12 10.586l4.95-4.95 1.414 1.414-4.95 4.95 4.95 4.95-1.414 1.414-4.95-4.95-4.95 4.95-1.414-1.414 4.95-4.95-4.95-4.95L7.05 5.636z"
+            fill="rgba(255,255,255,1)" />
+        </svg>
+      </div>
+
+      <a href="/stors" class="identity-site">
+        <img src="img/logo.png" class="logo" alt="" />
+        <h1 class="title-site">Stagon</h1>
+      </a>
+
+      <form class="search">
+        <select name="category" id="category">
+          <option value="Categoria">Categoria</option>
+        </select><input type="text" name="s" placeholder="Pesquisar produtos" /><button type="submit">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+            <path fill="none" d="M0 0h24v24H0z" />
+            <path
+              d="M11 2c4.968 0 9 4.032 9 9s-4.032 9-9 9-9-4.032-9-9 4.032-9 9-9zm0 16c3.867 0 7-3.133 7-7 0-3.868-3.133-7-7-7-3.868 0-7 3.132-7 7 0 3.867 3.132 7 7 7zm8.485.071l2.829 2.828-1.415 1.415-2.828-2.829 1.414-1.414z" />
+          </svg>
+        </button>
+      </form>
+
+      <span class="profile-user">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+          <path fill="none" d="M0 0h24v24H0z" />
+          <path
+            d="M14 21l-2 2-2-2H4.995A1.995 1.995 0 0 1 3 19.005V4.995C3 3.893 3.893 3 4.995 3h14.01C20.107 3 21 3.893 21 4.995v14.01A1.995 1.995 0 0 1 19.005 21H14zm5-2V5H5v14h5.828L12 20.172 13.172 19H19zm-11.028-.82a9.983 9.983 0 0 1-1.751-.978A6.994 6.994 0 0 1 12.102 14c2.4 0 4.517 1.207 5.778 3.047a9.995 9.995 0 0 1-1.724 1.025A4.993 4.993 0 0 0 12.102 16c-1.715 0-3.23.864-4.13 2.18zM12 13a3.5 3.5 0 1 1 0-7 3.5 3.5 0 0 1 0 7zm0-2a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+        </svg>
+        <div class="text-user">
+          <p>Olá, Vinícius</p>
+          <p><a href="">Minha conta</a></p>
+        </div>
+      </span>
+
+      <a class="shopping-cart">
+        <svg class="cart" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+          <path fill="none" d="M0 0h24v24H0z" />
+          <path
+            d="M4 6.414L.757 3.172l1.415-1.415L5.414 5h15.242a1 1 0 0 1 .958 1.287l-2.4 8a1 1 0 0 1-.958.713H6v2h11v2H5a1 1 0 0 1-1-1V6.414zM6 7v6h11.512l1.8-6H6zm-.5 16a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm12 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z" />
+        </svg>
+        <span class="notification on">9+</span>
+      </a>
+    </section>
+
+    <section class="menu">
+      <nav class="">
+        <a href="/stors/">Início</a>
+        <a href="https://seabratem.com.br" target="_blank">Nos encontre</a>
+        <a href="https://seabratem.com.br" target="_blank">Seabra Tem</a>
+        <a href="https://seabratem.com.br" target="_blank">Nos conheça +</a>
+      </nav>
+    </section>
+  </header>
+
+  <main>
+    <section class="container-main painel-product">
+      <section class="container-imgs">
+        <div class="slide-imgs">
+          <div id="resultID" class="img-zoom-result"></div>
+          <div class="container-img">
+            <img class="fade" src="./img/protuto-1.jpg" id="imgID" alt="" />
+            <img class="fade" src="./img/protuto-2.jpg" id="" alt="" />
+            <img class="fade" src="./img/protuto-3.jpg" id="" alt="" />
+            <img class="fade" src="./img/protuto-4.jpg" id="" alt="" />
+          </div>
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          <div class="control">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+          </div>
+        </div>
+        <br />
+      </section>
+
+      <div class="local">
+        <a href="">Produtos</a>/<a href="">Categoria</a>
+      </div>
+
+      <h3 class="name-product">Notebook Vaio fe14 8GB de RAM 1 TB de hd</h3>
+
+      <div class="review-product">⭐⭐⭐⭐⭐(122)</div>
+
+      <div class="price">
+        <div class="price-off">R$ 10,99</div>
+        <div class="price-on">R$ 5,99</div>
+      </div>
+
+      <div class="stock">Em estoque</div>
+
+      <div class="amount">
+        <span>Quantidade:</span>
+        <div class="qtd">
+          <button id="sub" class="qtd-buttons">-</button>
+          <input autocomplete="off" min="0" type="number" value="1" name="" class="" id="qtd-field" />
+          <button id="add" class="qtd-buttons">+</button>
+
+          <script>
+            const add = document.querySelector("#add");
+            const sub = document.querySelector("#sub");
+            const field = document.querySelector("#qtd-field");
+
+            add.addEventListener("click", () => {
+              field.value = Number(field.value) + 1;
+            });
+            sub.addEventListener("click", () => {
+              if (Number(field.value) > 0) {
+                field.value = Number(field.value) - 1;
+              }
+            });
+          </script>
+        </div>
+      </div>
+
+      <div class="action">
+        <button class="buy">Comprar</button>
+        <button class="cart">
+          Adicionar ao carrinho
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+            <path fill="none" d="M0 0h24v24H0z" />
+            <path
+              d="M4 6.414L.757 3.172l1.415-1.415L5.414 5h15.242a1 1 0 0 1 .958 1.287l-2.4 8a1 1 0 0 1-.958.713H6v2h11v2H5a1 1 0 0 1-1-1V6.414zM6 7v6h11.512l1.8-6H6zm-.5 16a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm12 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z" />
+          </svg>
+        </button>
+      </div>
+    </section>
+
+    <section class="container-main info-product">
+      <h3 class="title-section">Informações do produto</h3>
+      <pre>
+Pensado para você
+        O Samsung M31 possui o novo sistema operacional Android 10 que incorpora respostas inteligentes e ações sugeridas para todos os seus aplicativos. Entre as suas várias funcionalidades irá encontrar o tema escuro, a navegação por gestos e o modo livre de distração, para que você possa completar as suas tarefas enquanto desfruta ao máximo do seu dispositivo.
+        
+        Fotografia profissional no seu bolso
+        Descubra infinitas possibilidades para suas fotos com as 4 câmeras principais de sua equipe. Teste sua criatividade e jogue com iluminação, diferentes planos e efeitos para obter ótimos resultados.
+        
+        Experiência visual incrível
+        Assista às suas séries e filmes favoritos com a melhor definição na sua tela Super AMOLED de 6.4 ". Desfrute de cores brilhantes e detalhes precisos em todo o seu conteúdo.
+        
+        Desbloqueio facial e de impressão digital
+        Máxima segurança para que apenas você possa acessar o sua equipe. Você pode escolher entre o sensor de impressão digital para ativar seu telefone com um toque, ou o reconhecimento facial que permite desbloquear até 30% mais rápido.
+        
+        Vida útil da bateria mais longa
+        Desconecte-se! Com a super bateria de 6000 mAh você terá energia por muito mais tempo para jogar, assistir séries ou trabalhar sem recarregar.</pre>
+
+      <div class="view-more">
+        <button class="view-more-bt">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+            <path fill="none" d="M0 0h24v24H0z" />
+            <path d="M12 8l6 6H6z" />
+          </svg>
+          Ver mais
+        </button>
+
+        <script>
+          const bt = document.querySelector(".view-more-bt");
+          const container = document.querySelector(".info-product");
+
+          bt.addEventListener("click", () => {
+            container.style.height = "auto";
+            document.querySelector(".view-more").style.display = "none";
+          });
+        </script>
+      </div>
+    </section>
+
+    <section class="container-main other-product">
+      <h3 class="title-section">Outros produtos</h3>
+      <section class="products">
+        <div class="shadow left"></div>
+        <div class="shadow right"></div>
+        <ul>
+          <li>
+            <a href="./product.html" class="product on">
+              <div class="thumbnail">
+                <img src="./img/protuto-1.jpg" alt="" />
+              </div>
+              <div class="meta-info">
+                <div class="price-off">R$ 20,99</div>
+                <div class="price-on">R$ 10,99</div>
+                <div class="product-title">Celular</div>
+                <div class="review"><span> ⭐⭐⭐⭐⭐ (122)</span></div>
+
+                <div class="product-description">
+                  The justify-content property is used to align the whole grid
+                  inside the container.
+                </div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="./product.html" class="product on">
+              <div class="thumbnail">
+                <img src="./img/protuto-1.jpg" alt="" />
+              </div>
+              <div class="meta-info">
+                <div class="price-off">R$ 20,99</div>
+                <div class="price-on">R$ 10,99</div>
+                <div class="product-title">Celular</div>
+                <div class="review"><span> ⭐⭐⭐⭐⭐ (122)</span></div>
+
+                <div class="product-description">
+                  The justify-content property is used to align the whole grid
+                  inside the container.
+                </div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="./product.html" class="product on">
+              <div class="thumbnail">
+                <img src="./img/protuto-1.jpg" alt="" />
+              </div>
+              <div class="meta-info">
+                <div class="price-off">R$ 20,99</div>
+                <div class="price-on">R$ 10,99</div>
+                <div class="product-title">Celular</div>
+                <div class="review"><span> ⭐⭐⭐⭐⭐ (122)</span></div>
+
+                <div class="product-description">
+                  The justify-content property is used to align the whole grid
+                  inside the container.
+                </div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="./product.html" class="product on">
+              <div class="thumbnail">
+                <img src="./img/protuto-1.jpg" alt="" />
+              </div>
+              <div class="meta-info">
+                <div class="price-off">R$ 20,99</div>
+                <div class="price-on">R$ 10,99</div>
+                <div class="product-title">Celular</div>
+                <div class="review"><span> ⭐⭐⭐⭐⭐ (122)</span></div>
+
+                <div class="product-description">
+                  The justify-content property is used to align the whole grid
+                  inside the container.
+                </div>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </section>
+      <a href="./" class="bt-view-more animate-button bt-primary">Ver mais</a>
+    </section>
+
+    <section class="container-main reviews-container">
+      <h3 class="title-section">Avaliações</h3>
+
+      <div class="reviews">
+        <section class="review-all">
+          <h4>Nota média</h4>
+          <div class="value">4,7</div>
+          <div class="stars">⭐⭐⭐⭐⭐</div>
+        </section>
+        <section class="review-comments">
+          <div class="comment">
+            <h4>Vinícius</h4>
+            <span>⭐⭐⭐⭐⭐</span>
+            <p>
+              Muito bom o produto, só tá com o preço alto para o que ele
+              oferece, mas no demais ele é excelente!
+            </p>
+          </div>
+          <div class="comment">
+            <h4>Vinícius Araújo</h4>
+            <span>⭐⭐⭐⭐⭐</span>
+            <p>
+              Muito bom o produto, só tá com o preço alto para o que ele
+              oferece, mas no demais ele é excelente!
+            </p>
+          </div>
+          <div class="comment">
+            <h4>Vinícius</h4>
+            <span>⭐⭐⭐⭐⭐</span>
+            <p>
+              Muito bom o produto, só tá com o preço alto para o que ele
+              oferece, mas no demais ele é excelente!
+            </p>
+          </div>
+          <div class="comment">
+            <h4>Vinícius</h4>
+            <span>⭐⭐⭐⭐⭐</span>
+            <p>
+              Muito bom o produto, só tá com o preço alto para o que ele
+              oferece, mas no demais ele é excelente!
+            </p>
+          </div>
+          <div class="comment">
+            <h4>Vinícius</h4>
+            <span>⭐⭐⭐⭐⭐</span>
+            <p>
+              Muito bom o produto, só tá com o preço alto para o que ele
+              oferece, mas no demais ele é excelente!
+            </p>
+          </div>
+        </section>
+
+        <div class="view-more">
+          <button id="bt-more-comment" class="view-more-bt">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+              <path fill="none" d="M0 0h24v24H0z" />
+              <path d="M12 8l6 6H6z" />
+            </svg>
+            Ver mais
+          </button>
+
+          <script>
+            const btComment = document.querySelector("#bt-more-comment");
+            const containerComment =
+              document.querySelector(".review-comments");
+
+            let numberElements = containerComment.childElementCount;
+
+            if (numberElements > 4) {
+              btComment.parentElement.style.display = "flex";
+              function comments() {
+                let counter = 0;
+                for (let i = 0; i < numberElements; i++) {
+                  if (containerComment.querySelectorAll(".comment")[i].style.display == "" && counter < 4) {
+                    containerComment.querySelectorAll(".comment")[i].style.display = "grid";
+                    counter++;
+                  }
+                }
+              }
+              comments()
+              btComment.addEventListener("click", () => {
+                comments()
+                btComment.parentElement.style.display = "none"
+              });
+            }
+
+
+          </script>
+        </div>
+      </div>
+    </section>
+
+    <a href="/" class="animate-button bt-primary" style="margin: 1rem auto; padding: 1rem; width: 20rem; text-decoration: none;">Voltar ao inicio</a>
+  </main>
+
+  <footer>
+    <div class="social">
+      <a class="instagram icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+          <path fill="none" d="M0 0h24v24H0z" />
+          <path
+            d="M12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6zm0-2a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm6.5-.25a1.25 1.25 0 0 1-2.5 0 1.25 1.25 0 0 1 2.5 0zM12 4c-2.474 0-2.878.007-4.029.058-.784.037-1.31.142-1.798.332-.434.168-.747.369-1.08.703a2.89 2.89 0 0 0-.704 1.08c-.19.49-.295 1.015-.331 1.798C4.006 9.075 4 9.461 4 12c0 2.474.007 2.878.058 4.029.037.783.142 1.31.331 1.797.17.435.37.748.702 1.08.337.336.65.537 1.08.703.494.191 1.02.297 1.8.333C9.075 19.994 9.461 20 12 20c2.474 0 2.878-.007 4.029-.058.782-.037 1.309-.142 1.797-.331.433-.169.748-.37 1.08-.702.337-.337.538-.65.704-1.08.19-.493.296-1.02.332-1.8.052-1.104.058-1.49.058-4.029 0-2.474-.007-2.878-.058-4.029-.037-.782-.142-1.31-.332-1.798a2.911 2.911 0 0 0-.703-1.08 2.884 2.884 0 0 0-1.08-.704c-.49-.19-1.016-.295-1.798-.331C14.925 4.006 14.539 4 12 4zm0-2c2.717 0 3.056.01 4.122.06 1.065.05 1.79.217 2.428.465.66.254 1.216.598 1.772 1.153a4.908 4.908 0 0 1 1.153 1.772c.247.637.415 1.363.465 2.428.047 1.066.06 1.405.06 4.122 0 2.717-.01 3.056-.06 4.122-.05 1.065-.218 1.79-.465 2.428a4.883 4.883 0 0 1-1.153 1.772 4.915 4.915 0 0 1-1.772 1.153c-.637.247-1.363.415-2.428.465-1.066.047-1.405.06-4.122.06-2.717 0-3.056-.01-4.122-.06-1.065-.05-1.79-.218-2.428-.465a4.89 4.89 0 0 1-1.772-1.153 4.904 4.904 0 0 1-1.153-1.772c-.248-.637-.415-1.363-.465-2.428C2.013 15.056 2 14.717 2 12c0-2.717.01-3.056.06-4.122.05-1.066.217-1.79.465-2.428a4.88 4.88 0 0 1 1.153-1.772A4.897 4.897 0 0 1 5.45 2.525c.638-.248 1.362-.415 2.428-.465C8.944 2.013 9.283 2 12 2z" />
+        </svg></a>
+      <a class="whatsapp icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+          <path fill="none" d="M0 0h24v24H0z" />
+          <path
+            d="M7.253 18.494l.724.423A7.953 7.953 0 0 0 12 20a8 8 0 1 0-8-8c0 1.436.377 2.813 1.084 4.024l.422.724-.653 2.401 2.4-.655zM2.004 22l1.352-4.968A9.954 9.954 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10a9.954 9.954 0 0 1-5.03-1.355L2.004 22zM8.391 7.308c.134-.01.269-.01.403-.004.054.004.108.01.162.016.159.018.334.115.393.249.298.676.588 1.357.868 2.04.062.152.025.347-.093.537a4.38 4.38 0 0 1-.263.372c-.113.145-.356.411-.356.411s-.099.118-.061.265c.014.056.06.137.102.205l.059.095c.256.427.6.86 1.02 1.268.12.116.237.235.363.346.468.413.998.75 1.57 1l.005.002c.085.037.128.057.252.11.062.026.126.049.191.066a.35.35 0 0 0 .367-.13c.724-.877.79-.934.796-.934v.002a.482.482 0 0 1 .378-.127c.06.004.121.015.177.04.531.243 1.4.622 1.4.622l.582.261c.098.047.187.158.19.265.004.067.01.175-.013.373-.032.259-.11.57-.188.733a1.155 1.155 0 0 1-.21.302 2.378 2.378 0 0 1-.33.288 3.71 3.71 0 0 1-.125.09 5.024 5.024 0 0 1-.383.22 1.99 1.99 0 0 1-.833.23c-.185.01-.37.024-.556.014-.008 0-.568-.087-.568-.087a9.448 9.448 0 0 1-3.84-2.046c-.226-.199-.435-.413-.649-.626-.89-.885-1.562-1.84-1.97-2.742A3.47 3.47 0 0 1 6.9 9.62a2.729 2.729 0 0 1 .564-1.68c.073-.094.142-.192.261-.305.127-.12.207-.184.294-.228a.961.961 0 0 1 .371-.1z" />
+        </svg></a>
+      <a class="seabratem icon"></a>
+    </div>
+    <div class="info-site">
+      <h4>Nós também estamos no Seabra Tem!</h4>
+      <a class="animate-button button seabratem"> Quero conhecer!</a>
+    </div>
+    <div class="info-stagon">
+      <p>
+        Este site foi desenvolvido pela <a>Stagon Stors</a> todos os direitos
+        reservados.
+      </p>
+      <p>Versão do template: 1.0.0</p>
+    </div>
+  </footer>
+
+  <div class="top">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+      <path fill="none" d="M0 0h24v24H0z" />
+      <path d="M12 10.828l-4.95 4.95-1.414-1.414L12 8l6.364 6.364-1.414 1.414z" />
+    </svg>
+  </div>
+
+  <script>
+    btScroll = document.getElementsByClassName("top")[0];
+    const menu = document.querySelector("header");
+
+    window.onscroll = function () {
+      scrollFunction();
+    };
+
+    function scrollFunction() {
+      if (
+        document.body.scrollTop > 20 ||
+        document.documentElement.scrollTop > 20
+      ) {
+        btScroll.style.opacity = 1;
+        menu.classList.add("fixed");
+      } else {
+        btScroll.style.opacity = 0;
+        menu.classList.remove("fixed");
+      }
+    }
+
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+
+    btScroll.addEventListener("click", topFunction);
+  </script>
+
+  <script>
+    const btOpen = document.querySelector(".bt-open-nav");
+    const btClose = document.querySelector(".bt-close-nav");
+
+    btOpen.addEventListener("click", () => {
+      document.querySelector("header").classList.add("navbar");
+    });
+
+    btClose.addEventListener("click", () => {
+      document.querySelector("header").classList.remove("navbar");
+    });
+  </script>
+
+  <script src="./js/zoom-image.js"></script>
+  <script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+      showSlides((slideIndex += n));
+    }
+
+    function currentSlide(n) {
+      showSlides((slideIndex = n));
+    }
+
+    function showSlides(n) {
+      var i;
+      var slides = document.querySelectorAll(".container-img img");
+      var dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {
+        slideIndex = 1;
+      }
+      if (n < 1) {
+        slideIndex = slides.length;
+      }
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+        slides[i].id = " ";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex - 1].style.display = "block";
+      slides[slideIndex - 1].id = "imgID";
+      imageZoom(true);
+      dots[slideIndex - 1].className += " active";
+    }
+  </script>
+  <script>
+    imageZoom(false);
+  </script>
+</body>
+
+</html>
